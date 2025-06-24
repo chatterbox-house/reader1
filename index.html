@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>日本語リーダー</title>
+</head>
+<body>
+  <main id="app">
+    <section id="import-screen">
+      <h1>テキストを貼り付け</h1>
+      <textarea id="text-input" maxlength="5000" placeholder="ここに日本語のテキストを貼り付けてください…"></textarea>
+      <button id="process-btn">読み込む</button>
+    </section>
+
+    <section id="reader-screen" hidden>
+      <div id="sentence-display"></div>
+      <div class="controls">
+        <button id="prev-btn">←</button>
+        <button id="tts-btn">🔊</button>
+        <button id="next-btn">→</button>
+      </div>
+      <textarea id="user-translation" placeholder="訳を入力..." rows="2"></textarea>
+      <button id="save-translation">保存</button>
+      <button id="add-to-review">単語を追加</button>
+    </section>
+
+    <section id="review-screen" hidden>
+      <h2>復習モード</h2>
+      <select id="mode-select">
+        <option value="easy">かんたん</option>
+        <option value="medium">ふつう</option>
+        <option value="hard">むずかしい</option>
+      </select>
+      <div id="quiz-box"></div>
+      <input id="hard-answer" placeholder="日本語で入力…" hidden />
+      <button id="review-next">次へ</button>
+    </section>
+
+    <nav>
+      <button id="to-reader">📖 読む</button>
+      <button id="to-review">🧠 復習</button>
+      <button id="toggle-theme">🌙</button>
+    </nav>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

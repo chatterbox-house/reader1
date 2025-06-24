@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #fff;
+}
+textarea, input {
+  width: 95%;
+  margin: 1em auto;
+  display: block;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+button {
+  font-size: 1em;
+  padding: 14px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  background: #333;
+  color: #fff;
+  min-width: 56px;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5em 0;
+}
+#sentence-display {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2em 0;
+}
